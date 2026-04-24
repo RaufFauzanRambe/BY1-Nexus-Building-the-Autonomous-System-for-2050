@@ -1,0 +1,20 @@
+{
+  "name": "by1-nexus-api",
+  "version": "1.0.0",
+  "description": "BY1-Nexus: Building the Autonomous System for 2050 - AI Backend Service",
+  "type": "module",
+  "scripts": {
+    "dev": "python index.py",
+    "start": "python -m uvicorn api.main:app --host 0.0.0.0 --port 3031",
+    "test": "pytest tests/ -v",
+    "train": "python -c \"from api.services import training_service; import asyncio; asyncio.run(training_service.train_model())\""
+  },
+  "keywords": [
+    "ai",
+    "anomaly-detection",
+    "fastapi",
+    "autonomous-systems"
+  ],
+  "author": "BY1-Nexus Team",
+  "license": "MIT"
+}
